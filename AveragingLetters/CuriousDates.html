@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curious Dates</title>
+	
+</head>
+<body>
+		
+	<script type="text/javascript">
+		// get today's date
+		var d = new Date();
+		// make a new date object
+		var d2 = new Date ("October 29, 2018 4:00:00");
+		// create 3 variables with equations for month, day and year
+		var monthDiff = d2.getMonth() - d.getMonth();
+		var dayDiff = Math.abs (d2.getDay() - d.getDay());
+		var yearDiff = d2.getYear() - d.getYear();
+		// console.log the results in a string
+		console.log("There are", yearDiff,"years", monthDiff, "months and", dayDiff, "days before the Curious Date")
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays And Dom</title>
+	
+</head>
+<body>
+	<!-- empty text element -->
+	<p id="array"> </p>
+		
+	<script type="text/javascript">
+		//created array
+		var fruits = ["apple", "orange", "kiwi"];
+		//prompt to add element at en of array
+		fruits.push(prompt("Add more fruit"));
+		// remove first element in array
+		fruits.shift();
+		// sort elements alphabetically
+		fruits.sort();
+		// display element in HTML text separated by "with"
+		document.getElementById("array").innerHTML = fruits.join(" with ");
+	</script>
+
+</body>
+</html>
